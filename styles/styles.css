@@ -18,6 +18,108 @@ body {
   line-height: 1.3;
   font-weight: 400;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+.main-container {
+  flex-grow: 1;
+}
+html {
+  height: 100%;
+}
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+.navigation-logo {
+  margin-right: 30px;
+}
+.navigation-list {
+  display: flex;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation-user {
+  width: 320px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.services-item {
+  flex: 1;
+  min-width: 200px;
+}
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.button-brown {
+  background-color: #756157;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+.button-transparent {
+  background-color: transparent;
+}
+
+.button-rating {
+  background-color: #F2F2F2;
+  font-weight: 400;
+  color: #333333;
+}
+
+.button-pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+.button-pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.button-find {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+}
+
+.button-subscription {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
 }
 .main-catalog-title {
   font-size: 48px;
@@ -30,7 +132,7 @@ body {
   font-weight: 700;
   color: #333333;
 }
-.catalog-products-background {
+.catalog-start {
   background-image: url("../assets/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -56,10 +158,10 @@ body {
     color: white;
     font-style: bold;
     font-size: 30px;
-    justify-content: center;
 }
 .descriptions-text {
     font-family: "PT Sans";
-    font-weight: 700;
+    font-weight: 400;
     color: white;
+    font-style: regular;
 }
