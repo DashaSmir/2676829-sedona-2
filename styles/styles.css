@@ -68,6 +68,24 @@ html {
   flex-wrap: wrap;
   gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hotel-card {
+  flex: 1 1 300px;
+  background: #fff;
+}
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+.pagination-link {
+  display: inline-block;
+  padding: 8px 12px;
 }
 .button {
   text-decoration: none;
@@ -164,4 +182,51 @@ html {
     font-weight: 400;
     color: white;
     font-style: regular;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.navigation-list,
+.advantages-list,
+.services-list,
+.footer-social-list,
+.hotel-list,        /* если есть в catalog.html */
+.pagination,        /* пагинация */
+.catalog-filter-list /* фильтры в каталоге */ {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.button-login {
+  display: inline-block;
+  padding: 8px 34px;
+  margin-left: 20px;
+}
+.slogan {  /* у вас это .descriptions? У вас класс .descriptions для блоков с текстом */
+  padding-top: 69px;
+  padding-bottom: 90px;
+}
+.advantages-list {
+  padding-bottom: 60px;
+}
+.services-list {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.button-show {
+  width: 48px;
+  height: 48px;
+}
+.navigation-logo {
+  width: 138px;
+  height: 64px;
 }
